@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .section1{
+      
+      height: 620px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    .try-button{
+     margin-right: 90px ;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 500;
+     background-color: white;
+     padding-left: 40px;
+     padding-right: 40px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 40px;
+     border: none;
+    }
+    .body1{
+      display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .body1-text{
+      display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 500px;
+        margin-right: 70px;
+    }
+    .para1{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 45px;
+      width: 380px;
+      margin-bottom: 15px;
+    }
+    .para2{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 20px;
+      width: 410px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      
+    }
+    .start-button{
+      width: 220px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: RGB(254 83 190);
+      color: white;
+      border-radius: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+     font-weight: 500;
+     font-size: 14px;
+     border: none;
+    }
+    .box1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border:none;
+      margin-left: 150px;
+      margin-right: 150px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 50px;
+    }
+    .content1{
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+    }
+    .big{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .small{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      width: 380px;
+      margin-top: 0px;
+    }
+    .content2{
+      display: flex;
+      flex-direction: column;
+      margin-right: 90px;
+    }
+    .box2{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border:none;
+      margin-left: 330px;
+      margin-right: 330px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 8px;
+      padding: 30px;
+      padding-bottom: 40px;
+      margin-bottom: -100px;
+      position: relative;
+    }
+    .start-button2{
+      width: 260px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: RGB(254 83 190);
+      color: white;
+      border-radius: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     border: none;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .ready-para{
+      font-family: Arial, Helvetica, sans-serif;
+     font-weight: 700;
+     font-size: 23px;
+    }
+    .footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 350px;
+      background-color: RGB(0 37 46);
+      
+    }
+    .communication{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+     margin-left: 100px;
+      flex-direction: column;
+    }
+    .c-c{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .text{
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    @media (max-width: 600px){
+      .body1{
+        flex-direction: column;
+       }
+    .body1-text{
+        align-items: center;
+        margin-left: 400px;
+    }
+    .start-button{
+      margin-right: 24px;
+    }
+    .img1{
+      padding-left: 50px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="section1" >
+ <div class="header">
+    <img class="img1" style="width: 140px; margin-left: 90px ; " src="images\logo.svg" alt="">
+    <button class="try-button">Try It Free</button> 
+</div> 
+  <div class="body1">
+    <div class="body1-text">
+        <p class="para1"> Build The Community Your Fans Will Love</p>
+         <p class="para2"> Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+         Create connections with your users as you engage in genuine discussion. </p>
+    
+          <button class="start-button"> Get Started For Free</button> 
+    </div>
+    <img style="width: 530px; margin-top: 50px;"src="images\illustration-mockups.svg" alt="">
+</div>
+</div>
+
+ <div class="box1">
+<div class="content1">
+ <p class="big"> Grow Together</p>
+ <p class="small"> Generate meaningful discussions with your audience and build a strong, loyal community. 
+  Think of the insightful conversations you miss out on with a feedback form. </p>
+</div>
+  <img style="width:300px" src="images\illustration-grow-together.svg" alt="">
+</div>
+
+  <div class="box1">
+    <img style="width:300px" src="images\illustration-flowing-conversation.svg" alt="">
+    <div class="content2">
+    <p class="big">Flowing Conversations</p>
+
+     <p class="small"> You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+      have just-in-time loading for a more natural flow.</p>
+</div> 
+
+</div>
+
+<div class="box1">
+  <div class="content1">
+  <p class="big"> Your Users</p>
+
+ <p class="small"> It takes no time at all to integrate Huddle with your app's authentication solution. 
+  This means, once signed in to your app, your users can start chatting immediately.</p></div>
+  <img style="width:300px" src="images\illustration-your-users.svg" alt="">
+  </div>
+
+ <div class="box2">
+ <p class="ready-para"> Ready To Build Your Community?</p>
+
+  <button class="start-button2">Get Started For Free</button> </div> 
+<br><br><br><br>
+
+<div class="footer">
+ <div class="communication"> 
+         <div class="c-c">
+          <img  style="margin-right: 14px;" src="images\icon-location.svg" alt="">
+          <p  class="text" style="width:300px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua</p>
+        </div> 
+      <div class="c-c"> 
+        <img style="margin-right: 14px;" src="images\icon-phone.svg" alt="">
+           <p class="text" >+1-543-123-4567</p>
+        </div> 
+      <div  class="c-c">
+        <img style="margin-right: 14px;" src="images\icon-email.svg" alt=""> 
+       <p class="text">example@huddle.com</p>
+          </div> 
+ </div>
+  <div>
+      <P class="text"> About Us</P>
+    <P class="text"> What We Do</P>
+    <P class="text">  FAQ</P>
+  </div>
+  <div>
+    <P class="text">  Career</P>
+      <P class="text">   Blog </P>
+        <P class="text">  Contact Us </P>
+  </div>
+  <div style="margin-right: 70px;">
+       <p class="text">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+  </div>     
+</div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ramani</a>.
+    </p>
+  </footer>
+</body>
+</html>
