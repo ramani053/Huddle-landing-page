@@ -161,18 +161,4 @@
       font-size: 14px;
       font-weight: 300;
     }
-    @media (max-width: 600px){
-      .body1{
-        flex-direction: column;
-       }
-    .body1-text{
-        align-items: center;
-        margin-left: 400px;
-    }
-    .start-button{
-      margin-right: 24px;
-    }
-    .img1{
-      padding-left: 50px;
-    }
-    }
+  
